@@ -1,0 +1,23 @@
+{
+  "name": "stutorhub.com",
+  "version": "0.0.1",
+  "description": "Stutorhub.com",
+  "main": "init.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iSubhraOfficial/stutorhub.com.git"
+  },
+  "author": "Subhra",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/iSubhraOfficial/stutorhub.com/issues"
+  },
+  "homepage": "https://github.com/iSubhraOfficial/stutorhub.com#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1"
+  }
+}
