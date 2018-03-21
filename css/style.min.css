@@ -149,6 +149,15 @@ a.slider-btn {
     padding: 0.8rem 1rem;
     color: #2D3E50;
 }
+@media only screen and (max-width: 425px) {
+    a.slider-btn {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.5rem;
+    }
+    .carousel-caption h3 {
+        font-size: 1rem;
+    }
+}
 .intro-box {
     text-align: center;
 }
