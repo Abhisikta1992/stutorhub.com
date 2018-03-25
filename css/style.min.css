@@ -1,6 +1,7 @@
 body {
     -webkit-font-smoothing: antialiased !important;
     text-rendering: optimizeLegibility !important;
+    font-family: 'Work Sans';
 }
 .z-depth-0 {
     box-shadow: none !important;
@@ -24,8 +25,7 @@ body {
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
 }
 .no-pad {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding: 0;
 }
 .navbar {
     height: 5rem;
@@ -338,45 +338,43 @@ a.slider-btn {
     letter-spacing: 1px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .search-course-section form select, 
-	.search-course-section form input[type="text"] {
-		margin-right: 5px;
-	}
+    .search-course-section form select, .search-course-section form input[type="text"] {
+        margin-right: 5px;
+   }
 }
 @media (max-width: 991px) {
-	.search-course-section form input[type="text"] {
-		width: 71%;
-    }
+    .search-course-section form input[type="text"] {
+        width: 71%;
+   }
 }
 @media (max-width: 767px) {
     .search-course-section {
-		padding-bottom: 0;
-	}	
-	.search-course-section form select, 
-	.search-course-section form input {
-		width: 100%;
-		margin: 0 0 15px;
-	}
-	.search-course-section .input-group input {
-		margin-bottom: 15px;
-		width: 100%;
-	}
-	.search-course-section .input-group-btn  button[type="submit"]{
-		width: 100%;
-		display: inline-block;
-	}
-	.search-course-section .input-group {
-		display: inline;
-	}
-	.search-course-section .input-group-btn {
-		width: 100%;
-		display: inline-block;
-	}
+        padding-bottom: 0;
+   }
+    .search-course-section form select, .search-course-section form input {
+        width: 100%;
+        margin: 0 0 15px;
+   }
+    .search-course-section .input-group input {
+        margin-bottom: 15px;
+        width: 100%;
+   }
+    .search-course-section .input-group-btn button[type="submit"]{
+        width: 100%;
+        display: inline-block;
+   }
+    .search-course-section .input-group {
+        display: inline;
+   }
+    .search-course-section .input-group-btn {
+        width: 100%;
+        display: inline-block;
+   }
 }
-@media (max-width: 639px) {	
-	.search-course-section form input[type="text"] {
-		width: 100%;
-    }
+@media (max-width: 639px) {
+    .search-course-section form input[type="text"] {
+        width: 100%;
+   }
 }
 .course-section .section-header::before {
     content: "";
@@ -390,167 +388,205 @@ a.slider-btn {
     margin: -25px auto;
 }
 .courses-box {
-	margin-bottom: 60px;
+    margin-bottom: 60px;
 }
-.courses-box,
-.courses-img-box {
-	position: relative;
+.courses-box, .courses-img-box {
+    position: relative;
 }
 .courses-img-box {
-	overflow: hidden;
-	width: 100%;
-	display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
 }
 .courses-img-box::before {
-	content: "";
-	position: absolute;
-	left: -15%;
-	right: -15%;
-	top: -65px;
-	height: 47%;
-	background-color: rgba(45,62,80,0.9);
-	-webkit-transform: rotate(-13deg);
-	-moz-transform: rotate(-13deg);
-	-ms-transform: rotate(-13deg);
-	-o-transform: rotate(-13deg);
+    content: "";
+    position: absolute;
+    left: -15%;
+    right: -15%;
+    top: -65px;
+    height: 47%;
+    background-color: rgba(45,62,80,0.9);
+    -webkit-transform: rotate(-13deg);
+    -moz-transform: rotate(-13deg);
+    -ms-transform: rotate(-13deg);
+    -o-transform: rotate(-13deg);
     transform: rotate(-13deg);
 }
 .courses-box.active .courses-img-box::before {
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-ms-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	transform: rotate(0deg);
-	height: 100%;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    height: 100%;
     top: 0;
 }
-
 .courses-box .courses-box-hover p {
-	color: #fff;
+    color: #fff;
 }
-
 .courses-box-hover {
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	padding: 28px 30px;
-	color: #fff;
-	position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 28px 30px;
+    color: #fff;
+    position: absolute;
 }
-.courses-box-hover h3 { 
-	font-size: 20px;
-	text-transform: uppercase;
-	letter-spacing: 0.7px;
-	margin-bottom: 24px;
-	margin-top: 0;
+.courses-box-hover h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin-bottom: 24px;
+    margin-top: 0;
 }
-.courses-box-hover > p { 
-	font-size: 15px;
-	position: relative;
-	margin-bottom: 25px;
-	line-height: 26px;
-} 
-.courses-box-hover > p > span { 
-	font-size: 13px;
-	padding-left: 28px;
-	display: block;
-	position: relative;
-	margin-bottom: 13px;
-	text-transform: uppercase;
+.courses-box-hover > p {
+    font-size: 15px;
+    position: relative;
+    margin-bottom: 25px;
+    line-height: 26px;
 }
-.courses-box-hover > p span > i { 
-	margin-right: 10px;
-	font-size: 18px;
-	position: absolute;
-	left: 0;
-	top: 2px;
+.courses-box-hover > p > span {
+    font-size: 13px;
+    padding-left: 28px;
+    display: block;
+    position: relative;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+}
+.courses-box-hover > p span > i {
+    margin-right: 10px;
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    top: 2px;
 }
 .courses-box-hover > a {
-	background-color: #3b99d7;
-	padding: 12px 20px 13px 20px;
-	color: #fff;
-	font-weight: 600;
-	text-transform: uppercase;
-	font-size: 12px;
-	letter-spacing: 0.4px;
-	text-decoration: none;
+    background-color: #3b99d7;
+    padding: 12px 20px 13px 20px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    text-decoration: none;
 }
 .courses-box-hover button.btn {
-	padding: 11px 20px;
-	background-color: #3b99d7;
-	padding: 12px 20px 11px;
-	color: #fff;
-	font-weight: 600;
-	text-transform: uppercase;
-	font-size: 12px;
-	letter-spacing: 0.4px;
-	display: inline-block;
-	text-decoration: none;
-	border-radius: 0;
-	border: none;
-	font-family: "Work Sans",sans-serif;
+    padding: 11px 20px;
+    background-color: #3b99d7;
+    padding: 12px 20px 11px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 0;
+    border: none;
+    font-family: "Work Sans",sans-serif;
 }
-.courses-box-hover button.btn:focus,
-.courses-box-hover button.btn:hover {
-	outline: none;
-	text-decoration: none;
-	background-color: #3b99d7;
+.courses-box-hover button.btn:focus, .courses-box-hover button.btn:hover {
+    outline: none;
+    text-decoration: none;
+    background-color: #3b99d7;
 }
-.courses-box-hover button.btn,
-.courses-box-hover > p,
-.courses-box-hover > a {
-	opacity: 0;
-	-webkit-transition: all 0.5s ease 0s;
-	-moz-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
+.courses-box-hover button.btn, .courses-box-hover > p, .courses-box-hover > a {
+    opacity: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 .box-toggle {
-	border-radius: 100%;
-	width: 56px;
-	height: 56px;
-	background-color: #ff6c5e;
-	display: inline-block;
-	position: absolute;
-	top: 20%;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-	text-align: center;
-	line-height: 56px;
-	box-shadow: 5px 0px 5px rgba(0,0,0,0.25); 
-	-webkit-box-shadow: 5px 0px 5px rgba(0,0,0,0.25); 
-	cursor: pointer;
+    border-radius: 100%;
+    width: 56px;
+    height: 56px;
+    background-color: #ff6c5e;
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 56px;
+    box-shadow: 5px 0px 5px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 5px 0px 5px rgba(0,0,0,0.25);
+    cursor: pointer;
 }
 .box-toggle::before {
-	font-family:'FontAwesome';
-	content:"\f107";
-	color: #fff;
-	font-size: 24px;
+    font-family:'FontAwesome';
+    content:"\f107";
+    color: #fff;
+    font-size: 24px;
 }
 .courses-box.active .box-toggle {
-	top: 90%;
+    top: 90%;
 }
 .courses-box.active .box-toggle::before {
-	font-family: 'FontAwesome';
-	content: "\f106";
-	color: #fff;
-	font-size: 24px;
+    font-family: 'FontAwesome';
+    content: "\f106";
+    color: #fff;
+    font-size: 24px;
 }
-.courses-box.active .courses-box-hover button.btn,
-.courses-box.active .courses-box-hover > p,
-.courses-box.active .courses-box-hover > a { 
-	opacity: 1;
-	-webkit-transition: all 1.5s ease 0s;
-	-moz-transition: all 1.5s ease 0s;
-	-o-transition: all 1.5s ease 0s;
-	transition: all 1.5s ease 0s;
+.courses-box.active .courses-box-hover button.btn, .courses-box.active .courses-box-hover > p, .courses-box.active .courses-box-hover > a {
+    opacity: 1;
+    -webkit-transition: all 1.5s ease 0s;
+    -moz-transition: all 1.5s ease 0s;
+    -o-transition: all 1.5s ease 0s;
+    transition: all 1.5s ease 0s;
 }
-.courses-img-box::before,
-.box-toggle {
-	-webkit-transition: all 1s ease 0s;
+.courses-img-box::before, .box-toggle {
+    -webkit-transition: all 1s ease 0s;
     -moz-transition: all 1s ease 0s;
     -o-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
+}
+.our-student-section .content-box {
+    background-color: #ff6c5e;
+    padding: 70px 45px;
+    color: #fff;
+    min-height: 290px;
+}
+.our-student-section .content-box h3 {
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.3px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.our-student-section .content-box p {
+    font-size: 17px;
+    letter-spacing: 0.3px;
+    line-height: 28px;
+    color: #fff 
+}
+.our-student-section .content-box span {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    padding: 28px 0 0 18px;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+.student-bg {
+    background-color: #3b99d7;
+}
+.student-bg .content-box {
+    background-color: transparent;
+    text-align: center;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+.student-bg .content-box > p {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.student-bg .content-box > p {
+    line-height: 33px;
 }
