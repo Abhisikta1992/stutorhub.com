@@ -666,31 +666,44 @@ a.img-logo span {
     height: 1.5px;
     width: 60px;
 }
-.footer-main .mini-ftr {
+.footer-main .mini-ftr ul,
+.footer-main .copyelem ul {
     display: flex;
-    flex-direction: row;
-    align-content: flex-start;
-}
-.footer-main .copyelem {
-    display: flex;
-    flex-direction: row;
-    align-content: flex-end; 
-}
-.footer-main ul.mini-ftr,
-.footer-main ul.copyelem {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-ul.mini-ftr li,
-ul.copyelem li {
+.mini-ftr ul li,
+.copyelem ul li {
     font-size: 0.9rem;
     padding-right: 20px;
     color: rgb(143, 143, 143);
     
 }
-ul.mini-ftr li a {
+.mini-ftr ul li a {
     color: rgb(143, 143, 143);
     text-decoration: none;
     text-transform: uppercase;
+}
+@media only screen and (max-width: 425px) {
+    .mini-ftr ul li,
+    .copyelem ul li {
+        font-size: 0.85rem;
+        padding: 0 5px;
+    }
+}
+.ftr-box p {
+    font-family: 'Work Sans';
+    color: #919191;
+    line-height: 1.5;
+}
+a.text-phone,
+a.text-addrs,
+a.text-mail {
+    color: #919191;
+    text-decoration: none;
+    display: block;
+    margin-left: 25px;
+    position: relative;
+    top: -22.5px;
 }
