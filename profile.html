@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>StutorHub - Profile</title>
+    <link rel="icon" href="assets/ico/favicon-16.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/color.min.css">
+    <link rel="stylesheet" href="css/rate.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-expand-md fixed-top z-depth-2">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/stutorhub.svg"><span>STUTORHUB</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobilenav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false">
+                <path stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+            <div class="collapse navbar-collapse" id="mobilenav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#">home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">about us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>   
+    <div class="container">
+        <div class="profile-box">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/img/profile/m_avatar.png" alt="Avatar" class="z-depth-2">
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                    <div class="member-name">
+                            <h3>Subhra Kanti Das</h3>
+                    </div>
+                    <div class="member-loc">
+                        <i class="fa fa-map-marker"></i>
+                        Kolkata, West Bengal
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="skill">
+                        <ul>
+                            <li><a href="#">Computer Science</a></li>
+                            <li><a href="#">Mathematics</a></li>
+                            <li><a href="#">English</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row d-block">
+                    <div class="ratings">User Rating</div>
+                    <div id="rating"></div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/rate.js"></script>
+    <script>
+            $(function () {
+            $("#rating").rateYo({
+              starWidth: "20px",
+              rating: 3.5,
+              readOnly: true,
+              normalFill: "#A2A2A2",
+              ratedFill: "#01579B"
+            });
+            });
+    </script>
+</body>
+</html>

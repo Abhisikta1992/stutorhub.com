@@ -685,6 +685,9 @@ a.img-logo span {
     text-decoration: none;
     text-transform: uppercase;
 }
+.mini-ftr ul li a:hover {
+    color: #FF6C5E;
+}
 @media only screen and (max-width: 425px) {
     .mini-ftr ul li,
     .copyelem ul li {
@@ -706,4 +709,48 @@ a.text-mail {
     margin-left: 25px;
     position: relative;
     top: -23.5px;
+}
+.profile-box {
+    margin: 12.5% 0 0 0;
+}
+.profile-box img {
+    height: 225px;
+}
+.profile-box .member-name h3 {
+    font-family: 'Alice';
+    font-size: 1.5rem;
+}
+.profile-box .member-loc {
+    color: #919191;
+    font-size: 0.8rem;
+    position: relative;
+    top: 7px;
+    margin-left: 20px;
+}
+.profile-box .skill {
+    padding: 10px 0;
+}
+.skill ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.skill ul li {
+    margin: 0 15px 0 0;
+    font-weight: 700;
+}
+.skill ul li a {
+    text-decoration: none;
+}
+#rating {
+    padding: 0;
+    cursor: not-allowed;
+}
+.ratings {
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #929292;
 }
